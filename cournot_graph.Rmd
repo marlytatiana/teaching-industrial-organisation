@@ -1,12 +1,14 @@
 ---
-title: "Cournot"
-author: "MarlyTCelis"
-date: "December 4, 2023"
+title: "Cournot Nash Equilibrium"
+subtitle: "Industrial Organization and Competition Policy"
+author: "Marly Tatiana Celis"
+date: "December 7th, 2023"
 output:  slidy_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(ggplot2)
 library(tidyverse)
 
@@ -15,10 +17,21 @@ library(tidyverse)
 
 ## Cournot Market Structure
 
-This is a simple code for representing the Cournot equilibrium for a duopoly when market demand is $Q(P)=200-P$ and each firm’s cost function is $C(q_i )=20q_i$, where $i=1,2$. 
+This is a simple code for representing the Cournot equilibrium for a duopoly when market demand is $Q(P)=200-P$.
+Each firm’s cost function is $C(q_i )=20q_i$, where $i=1,2$. 
 
-## Create output q
+- In this case the Cournot model corresponds to two firms with symmetric costs.
 
+- Each firm's goal is to chose the level of output that maximizes profits, given the output of the other firm.
+
+- Firm i's payoffs are profits $\pi_i(q_i,q_j)=(p-c)q_i$
+
+
+## Create data frame with output values for each firm
+
+The first step consist on creating a data frame with two columns. On column for the output for firm 1 and another column with the output for firm 2.
+
+Next, we create some value with the parameters of the demand and costs functions. 
 ```{r cournot, echo = TRUE, eval=TRUE}
 rm(list=ls())
 
@@ -26,7 +39,7 @@ rm(list=ls())
 cournotdata <- data.frame(output_firm1 = seq(0, 180, by = 10),
                  output_firm2 = seq(0, 180, by = 10))
 
-
+# Create values with parameters of the functions 
 a <- 200
 c <- 20
 b <- 1
@@ -52,7 +65,6 @@ cournotdata <- cournotdata %>%
   mutate( bestresp_Firm1 = (a-c-b*output_firm2)*((2*b)^-1),
           bestresp_Firm2 = (a-c-b*output_firm1)*((2*b)^-1)
           )
-
 
 ggplot() +
   geom_line(data = cournotdata, aes(x = output_firm1, y = bestresp_Firm2), color = "blue", size = 1.5) +
