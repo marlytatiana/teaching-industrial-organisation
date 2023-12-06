@@ -4,6 +4,14 @@ subtitle: "Industrial Organization and Competition Policy"
 author: "Marly Tatiana Celis"
 date: "December 7th, 2023"
 output:  slidy_presentation 
+# output:  beamer_presentation
+# pdf_document:
+#     fig_width: 7
+#     fig_height: 6
+#     fig_caption: true
+# #  theme: "default"
+# #     keep_tex: true
+# # classoption: aspectratio=169    
 ---
 
 ```{r setup, include=FALSE}
