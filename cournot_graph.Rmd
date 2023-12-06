@@ -3,7 +3,7 @@ title: "Cournot Nash Equilibrium"
 subtitle: "Industrial Organization and Competition Policy"
 author: "Marly Tatiana Celis"
 date: "December 7th, 2023"
-output:  slidy_presentation
+output:  slidy_presentation 
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 library(ggplot2)
 library(tidyverse)
-
+#tinytex::install_tinytex(force =TRUE)
 ```
 
 

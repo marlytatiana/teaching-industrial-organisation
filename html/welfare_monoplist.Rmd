@@ -1,0 +1,76 @@
+---
+title: "Welfare Graphs"
+author: "Marly Tatiana Celis"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+library(tidyverse)
+```
+
+## Shiny Presentation
+
+This R Markdown presentation is made interactive using Shiny. The viewers of the presentation can change the assumptions underlying what's presented and see the results immediately. 
+
+To learn more, see [Interactive Documents](http://rmarkdown.rstudio.com/authoring_shiny.html).
+
+## Interactive Plot
+
+```{r monopoly, echo = TRUE, eval=TRUE}
+rm(list=ls())
+
+# Set up data for the demand and marginal cost curves
+quantity <- seq(0, 100, by = 1)
+demand <- 100 - quantity
+marginal_cost <- rep(30, length(quantity))  # Constant marginal cost for simplicity
+
+```
+
+## Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## R Output
+
+```{r monopolycurve, echo = TRUE, eval=TRUE}
+# Set up data for the monopolist's chosen quantity and price
+
+
+monopoly_quantity <- 40
+monopoly_price <- demand[which.min(abs(quantity - monopoly_quantity))]
+
+```
+
+## Deadweightloss
+```{r deadweightloss, echo = TRUE, eval=TRUE}
+# Coordinates for shading deadweight loss area
+dw_loss_points <- data.frame(
+  x = c(0, monopoly_quantity, monopoly_quantity),
+  y = c(demand[1], demand[which.min(abs(quantity - monopoly_quantity))], marginal_cost[which.min(abs(quantity - monopoly_quantity))])
+)
+```
+
+```{r plot, echo = TRUE, eval=TRUE}
+# Create the ggplot
+p <- ggplot() +
+  geom_line(aes(x = quantity, y = demand, color = "Demand"), size = 1.5) +
+  geom_line(aes(x = quantity, y = marginal_cost, color = "Marginal Cost"), size = 1.5) +
+  geom_point(aes(x = monopoly_quantity, y = monopoly_price), color = "red", size = 3) +
+  geom_text(aes(x = monopoly_quantity, y = monopoly_price, label = "Monopoly"), vjust = -0.5, hjust = -0.5, color = "red") +
+  geom_ribbon(data = dw_loss_points, aes(x = x, ymin = marginal_cost[which.min(abs(quantity - monopoly_quantity))], ymax = demand[which.min(abs(quantity - monopoly_quantity))]), fill = "gray", alpha = 0.3) +
+  labs(title = "Monopoly: Deadweight Loss and Welfare",
+       x = "Quantity", y = "Price") +
+  theme_minimal()
+```
+
+```{r plotprint, echo=TRUE, eval=TRUE}
+# Print the plot
+print(p)
+```
+

@@ -1,0 +1,129 @@
+---
+title: "Assignment 1 - ECB3IO Problem 2(a) welfare and monopoloist"
+author: ""
+subtitle: "Industrial Organization and Competition Policy"
+date: "`r Sys.Date()`"
+output:  slidy_presentation 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+library(ggplot2)
+library(tidyverse)
+```
+
+## Profit Maximizing Monopolist
+
+Assignment 1 problem 2 requested a graphical representation in RStudio\footnote{Or other software} of the concepts of welfare and deadweight loss in the context of a monopoly.
+
+This is a sample code to plot monopoly demand, marginal cost, marginal revenue, and the area of deadweight loss. 
+
+Please read pages 33-36 of the book "Industrial Organization: A Strategic Approach" by Church and Ware (2000) for a thourghouh description of the concepts and formulas employed.
+
+## Load necessary libraries
+
+```{r setting, echo = TRUE}
+
+library(tidyverse)
+
+rm(list=ls())
+
+# Set up data for a linear inverse demand curve
+quantity <- seq(0, 10, by = 1)
+a <- 10
+b <- 0.5
+inverse_demand <- 10 - 0.5 * quantity  # Linear inverse demand equation: P = 10 - 0.5Q
+marginalcost <- 6
+pricemonopoly <- (a+marginalcost)/2
+quantitymonopoly <- (a-marginalcost)/(2*b)
+quantitysocial <- (a-marginalcost)/(b)
+
+# Create a data frame
+df_inverse_demand <- data.frame(quantity, inverse_demand)
+
+```
+
+## Plot the linear inverse demand curve
+
+```{r InverseDemand,  echo = TRUE}
+
+
+# Plot the linear inverse demand curve
+p_inverse_demand <- ggplot(df_inverse_demand, aes(x = quantity, y = inverse_demand)) +
+  geom_line(color = "blue", size = 1, linetype = "solid") +
+  # Add labels
+  labs(title = "Linear Inverse Demand Curve",
+       x = "Quantity",
+       y = "Price") +
+  # Customize the theme
+  theme_minimal()
+# Print the plot
+print(p_inverse_demand)
+
+
+```
+
+## Example of inverse demand plus marginal revenue
+```{r Monopoly, echo = TRUE}
+# Calculate marginal revenue
+slope_demand <- -0.5  # slope of the inverse demand curve
+marginal_revenue <- 10 - (2*0.5)* quantity
+
+
+# Add the marginal revenue variable to the data frame
+df_inverse_demand$marginal_revenue <- marginal_revenue
+
+
+
+```
+
+## Plot the linear inverse demand curve with marginal revenue
+
+```{r AllVariables, echo = TRUE}
+# Plot the linear inverse demand curve with marginal revenue
+p_inverse_demand <- ggplot(df_inverse_demand, aes(x = quantity)) +
+  geom_line(aes(y = inverse_demand), color = "blue", size = 1, linetype = "solid", ) +
+  geom_line(aes(y = marginal_revenue), color = "deepskyblue", size = 1, linetype = "dashed", ) +
+  geom_line(aes(y = marginalcost), color = "black", size = 0.5, linetype = "solid", ) +
+  geom_line(aes(y = pricemonopoly), color = "deeppink2", size = 0.5, linetype = "solid",) +
+  geom_vline(xintercept = quantitymonopoly, linetype = "dashed",) +
+  geom_vline(xintercept = quantitysocial, linetype = "dashed",) +
+  theme_minimal()
+
+print(p_inverse_demand)
+
+``` 
+
+## Add Deadweight loss
+
+
+```{r Deadweightloss,  echo = TRUE}
+
+
+# Add the Deadweight loss
+p_inverse_demand <- p_inverse_demand +
+  geom_polygon(data = data.frame(x = c(quantitymonopoly, quantitymonopoly, quantitysocial),
+                                 y = c(pricemonopoly, marginalcost, marginalcost)),
+               aes(x = x, y = y), fill = "gray", alpha = 0.5) +
+  geom_text(x=(quantitymonopoly+1.5), y=(pricemonopoly-1.2), label="DWL") 
+
+print(p_inverse_demand)
+
+```
+
+## Add labesl and text
+```{r Additional,  echo = TRUE }
+p_inverse_demand <- p_inverse_demand + ggtitle("Plot of Profit Maximizing Monopolist \n Deadweight loss") +
+  xlab("Quantity") + ylab("Price") +
+  geom_text(x=(quantitymonopoly-3), y=(pricemonopoly+0.2), label="Monopoly Price", color="deeppink2") +
+  geom_text(x=(quantitymonopoly-3), y=(marginalcost+0.2), label="Marginal cost", color = "black") +
+  geom_text(x=(quantitymonopoly), y=(pricemonopoly+1), label="Inverse Demand", color = "blue") + 
+  geom_text(x=(quantitymonopoly+3), y=(pricemonopoly-3.5), label="Marginal Revenue", color = "deepskyblue")
+
+# Print the plot
+print(p_inverse_demand)
+
+``` 
+
+
