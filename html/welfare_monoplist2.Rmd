@@ -3,7 +3,9 @@ title: "Assignment 1 - ECB3IO Problem 2(a) welfare and monopoloist"
 author: ""
 subtitle: "Industrial Organization and Competition Policy"
 date: "`r Sys.Date()`"
-output:  slidy_presentation 
+output: 
+  slidy_presentation: 
+    self_contained: no
 ---
 
 ```{r setup, include=FALSE}

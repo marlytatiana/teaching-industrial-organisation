@@ -3,7 +3,9 @@ title: "Cournot Nash Equilibrium"
 subtitle: "Industrial Organization and Competition Policy"
 author: "Marly Tatiana Celis"
 date: "December 7th, 2023"
-output:  slidy_presentation 
+output: 
+  slidy_presentation: 
+    self_contained: no
 # output:  beamer_presentation
 # pdf_document:
 #     fig_width: 7
