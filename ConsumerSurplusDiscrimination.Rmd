@@ -1,0 +1,58 @@
+---
+title: "ConsumerSurplusDiscrimination"
+author: "MarlyTCelis"
+date: "January 5, 2024"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyverse)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r consumer surplus, echo=FALSE}
+rm(list=ls())
+qMarket1 <- seq(0, 2, by = 0.5)
+aMarket1 <- 2
+bMarket1 <- 1
+idemandMarket1 <- aMarket1 - bMarket1* qMarket1  # Linear inverse demand equation: P = 2-x
+priceMarket1 <-1.5
+
+# Create a data frame
+market1 <- data.frame(qMarket1, idemandMarket1)
+
+
+# Plot the linear inverse demand curve
+demandmarket1 <- ggplot(market1, aes(x = qMarket1, y = idemandMarket1)) +
+  geom_line(color = "blue", size = 1, linetype = "solid") +
+  # Add labels
+  labs(title = "Linear Inverse Demand Curve",
+       x = "Quantity",
+       y = "Price") +
+  # Customize the theme
+  theme_minimal()
+# Print the plot
+print(demandmarket1)
+```
