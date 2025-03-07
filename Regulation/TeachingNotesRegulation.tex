@@ -1,0 +1,660 @@
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+%\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+%\pagestyle{fancy} % options: empty , plain , fancy
+%\renewcommand{\headrulewidth}{0pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+%
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+%
+%%% ToC (table of contents) APPEARANCE
+%\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+%\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+%\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\usepackage{amsfonts,latexsym,amsthm,amssymb,amsmath,amscd,euscript}
+\usepackage{mathtools}
+\usepackage{array}
+
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Teaching Notes for Economics of regulation}
+\author{Marly Tatiana Celis}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{Problem set 2}
+
+\subsection{Question 1}
+This week we are going to be talking about public enterprises, contestable markets and competition for the market. There are three main readings. The first one is the paper by Oliver Hart, Andrei Shleifer, and Robert Vishny from 1997 called ``'The proper scope of government: Theory and an application to prisons'. This paper is going to guide the discussion around incomplete contracts and how then the incentives of the parties involve change depending on ownership and completeness. The second paper is Contestable Markets: An uprising in the theory of industry structure by William Baumol from 1982. This paper lays the foundations for what we call now contestable markets and what he calls a new theory of competition. The third reading corresponds to chapter 11 from the book ``Economics of Regulation and antitrust'' in which the authors introduce us to the concept of competition for the market and franchise bidding.
+
+Let's start with the first part of the problem set and its three questions all related to the first reading. The first question asks \textbf{What is an incomplete contract? Do we observe such contracts in reality? Why do Hart et al (1997) not study complete contracts}. According to Hart et al (1997) ``To understand the costs and benefits of contracting out, we need to consider a situation where contracts are incomplete and where residual rights of control in uncontracted for circumstances are important in determining agents' incentives''. In other words, if a contract would be complete and everything would be specified with great detail then the contracting parties agree to some extend with the outcomes, but it doesn't inform the parties about how would be different, or better, or optimal when the contract is not complete. In other words, it is easy to imagine a benchmark situation where the contract is complete, but the more interesting and necessary part is to know what would happen when the contract is not complete. Hart et al (1997) says ``The assumption of contractual incompleteness is not hard to motivate once it is recognized that the quality of service the government wants often cannot be fully specified''.  At this point, we might have of course noticed that Hart et al (1997) was mostly focussed on discussing the case in which the governemnt can take over the provision of a service or could instead contract it out. This is a great motivation, but I believe that one can extend this situation (and therefore model) to other private scenarios.
+
+A key aspect to consider about complete and incomplete contracts is what the authors call \textit{residual control rights} which refer to the righst and duties regarding uncontracted for circumstances. Such rights are important in determining agents' incentives. In other words, who has the right to do what is not specified in the contract.
+
+To precisely answer the question let's define what a complete contract is. A complete contract takes place when the parties to an agreement could specify their respective rights and duties for every possible state of the world. There would be no gaps in terms of the contract. Likewise, if the rights and duties cannot be fully specified for the future state of the world, then the contract would be incomplete becuase there would be gaps.  So, why focus on incomplete contracts? from Hart et al (1997) motivating example where the government is considering contracting-out versus providing a service in-house if the contract could be full complete, full specified it would be the same process that of motivating contractors to do the work versus that of motivating public employees.
+
+The answer to the question of whether we observe such contracts in reality is yes. Hart et al. (1997) give us examples such as Prisons, perhaps educational systems, health systems, garbage collection, and, to generalize, every state-owned enterprise. But we see this all the time in supply-chain interactions, at least the contract incompleteness and the issue of residual rights of control in uncontracted circumstances.
+
+
+\subsection{Question 2}
+
+I have this answer in my notes
+
+
+\subsection{Question 3}
+Now, we want to find some real-life examples. The question is \textbf{Can you think of a case when contracting-out was unsuccessful and a case when it was successful? Why did it fail? Think in terms of incentives, and try to relate it to the literature you have read}.  
+To follow up the example illustrated in the paper, here I'm going to show two examples about prisons (particularly in the US), and one on ambulance services.
+
+In terms of Hart's model we would defined unsuccessful a case when the cost of putting effort into reducing the cost is the same as the benefit of such effort. Therefore, it is unclear whether undertaking innovations to reduce costs would be a good idea after all. On the other hand, the benefit of innovating in quality is small, so perhaps not worth it. Put into the model terms we would have $c(e) \approx b(e)$ and $\beta(i) \approx 0$
+
+These papers I'm going to show you discuss contracting-out as the private provision of a service, in contrast to the public provision of it.  
+
+The first paper I want to refer to is called ``Impacts of private prison contracting on inmate time served and recidivism''. From the abstract we can extract two pieces of information and relate them to the model. First, contracts (contracting-out) pays per diem or per day per each occupied bed. Second, private prisons keep inmates longer in prison. What the authors find is that., private prison generate cost-savings, but becuase at the end they keep the inmates longer the government has to pay more. Therefore, such delayed release erodes half of the cost sayings. In terms of Hart's model we are saying $c(e) \approx \frac{b(e)}{2}$  For this one, I'd say it is unclear whether this is beneficial to society because while inmates are longer in prison they might be reducing the chances of commiting crimes by recidism, but also increases the changes of inmates getting involved in conduct violations.
+
+Mukherjee (2010) focuses on studying how private prisons impact recidivism and sentence length, the contribution of this paper is the analysis of public and private provision of prisons. According to the paper by Mukherjee (2010) `` The theoretical prediction given this type of contract is that private operators may increase recidivism because they ignore the benefits of noncontractible quality, for example, in the form of rehabilitation programs'' pag 411. ``In the model, the private operator selects whether to distort release decisions based on the marginal profit and the level of government monitoring. The model also yields implications for recidivism based on the assumption that recidivism risk declines with time since offense''. The bottom line of the paper is that they provide evidence that filled the research gap in understanding how private prison contracting impacts inmates and whether they provide cost savings. Based on the results of time served, the analysis shows that private prisons are indeed cost-saving. The results also imply that about 48\% of the cost savings are eroded by the additional time served, leaving about 52 percent in cost savings.
+
+
+We can now check another example of public versus private provision of a service, in this case ambulance services. Daniel Knutssona nd Bjorn Tyrefors study quality differences between publicly and privately owned ambulances in Stockholm, Sweden. They find that private ambulances reduce costs, as expected from the model, and offer a good service in terms of response time (this being perhaps a contratible aspect), but they perform worse on noncontracted measures such as mortality, which is an uncontractible characteristic. And recall that the model says ``the private contractor's incentive to engage in cost reduction is typically too strong since he ignores the adverse impact on (nonverifiable) quality''. The research desing of the paper is quite interesting. First, there were auctions held based on competitive tendering and private ambulance firms were granted five-year contracts at a fixed annual reimbursement to operate ambulance services side by side with the public provider. There was no entry or exit  during the contract period. Neither the patients could choose providers, nor could the providers choose patients. 
+
+The authors have two quality outcomes, one that is contractible and another one that is not. The explicitly contracted include patient dispatch and reaching patients time. For the noncontracted quality outcome the authors use mortality. The mechanism or argument is that private firms are driven by costs minimization, in other words they want to reduce their costs, which includes labor costs, and therefore they pay lower wages to people who are willing to pay for a lower wage are probably less qualified for the job or temporary staff and less on-the-job training.
+
+The bottom line is that the provision of services where some aspects of quality are noncontratible are going to create a loss in benefits becuase indeed the private providers do not take such quality aspects into consideration. In the case of prisons the incentives offset only one part of the benefits, but in the case of ambulances the social benefits are irreperable.
+
+\subsection{Question 4}
+
+The following three questions are associated with the part 2 of the topics, in this case contestable markets theory by William Baumol (1982). Question 4 asks, \textbf{What are the characteristics of a contestable market (according to Baumol (1982)? For each of these characteristics, discuss why they are important (what would happen if each of them would be violated)?}
+
+Let's see first that for Baumol (1982) the concept of contestable market or perfectly contestable market is a generalization of the concept of a perfectly competitive market. He argues that is it characterized by optimal behavior and applies to the fill range of industry structures including monopoly and oligopoly. He discusses the idea of potential competition following Bain. Baumol also argues that in perfectly contestable markets behavior is sharply discontinuous in its welfare attributes. In addition, Baumol warns us that contestability is merely a broader ideal, a benchmark of wider applicability than is perfect competition. The nature of the industry structure is determined explicitly, endogenously, and simultaneously with the pricing, output, advertising, and other decisions of the firms of which it is constituted.
+
+As for characteristics Baumol defines the following
+
+\begin{itemize}
+\item Freedom of entry. This freedom implies that the entrant suffers no disadvantage in terms of production technique or perceived product quality relative to the incumbent. This characteristic doesn't mean that entrance is free but that the costs are the same for potential entrants. There is no discrimination, and potential entrants find it appropriate to evaluate the profitability of entry in terms of the incumbent. Another way to put it is that entry does not entail sunk expenditures. Think about as the case of a monopolist in a contestable market. The pricing behavior of a monopolist in a perfectly contestable market is constrained by the threat of entry or potential competition rather than acutal competition.
+\item Freedom of exit is another characteristic becuase then freedom of entry is guaranteed. Costless exit is possible because production entails no sunk costs. Any firm can leave and fully recover its remaining capital costs.
+\item Attributes: firms need not be small or numerous or independent in their decision making or produce homogeneous products.
+\end{itemize}
+
+The main vulnerability is that there is a possibility of \textit{hit-and-run} entry if their prices are such that a profitable entry opportunity exists given an expectation by the entrant of fixed incumbent prices.
+
+The characteristics of a contestable market are important because it implies that in the long-run fixed costs need not be sunk and when they are not sunk the issue of market power is not a concern regardless of the actual number of firms in the industry. In other words, when costs are fixed but not sunk the firm can recover that cost by selling the capital or by reusing it. One example is railroads. The costs of the tracks are fixed and sunk, if the railroad is closed you cannot recover the costs of having had set the rail on that terrain. But the locomotive, the trains are fixed costs but not sunk, either can be sold to another region or can be reused in another region. (example form Church and ware) 
+
+\subsection{Question 5}
+After clarifying the characteristics of a contestable market, let's now discuss welfare aspects of perfectly contestable markets. Discuss when a contestable market is not a perfectly competitive market and vice versa.
+
+For starters, Baumol (1982) says: ``Firms need not be small or numerous or independent in their decision making or produce homogenous products.''  
+
+\begin{itemize}
+	\item There are no barriers to entry or exit. This is a common characteristic between contestable markets and perfectly competitive market
+	\item In perfect competition firms are assumed to be small and to be many of them, in constetable markets however that is not necessarily the case.
+	\item In perfect competition firms make decision independently of other firms decisions, in contestable markets firms might take into consideration other firms decisions.
+	\item In perfect compeition firms produce homogeneous products, but in contestable markets this is not a determinant of threat of entry.
+\end{itemize}
+
+Regarding perfect contestability and welfare, Baumol explicitly he says
+
+\begin{itemize}
+	\item A contestable market never offers more than a normal rate of profit - its economic profits must be zero or negative, even if it is oligopolistic or monopolistic. In other words, the opportunity for costless entry and exit guarantee that an entrant who is content to accept a slightly lower economic profit can do so by selecting prices a bit lower than the incumbents.
+	\item Absence of inefficiencies in production. Why? becuase any inefficiency is an invitation for potential entrants and an open door for exit
+	\item No product can be sold at a price that is less than its marginal cost.
+\end{itemize}
+
+\subsection{Question 6}
+\textbf{Do you see any policy implications from the theory of contestable markets? You can (do not have to) support your arguments by academic literature}
+
+There might be plenty of policy implications particularly in terms of regulation and legislation policies. The crucial characteristic of a contestable market regards with the fixed costs and the barriers to entry. If certain regulations could guarantee that firms do not have to incur into fixed sunk costs then and it is of benefit for society then contestable markets are worth pursuing in policy terms. There are two examples: one is airlines, and the other one is digital markets. For airlines, the literature has focused on studying the profitability and prices charged. Digital markets is an emergent industry, and at least in Europe the Commission has now draft a regulation for the digital sector with the aim of making them contestable and fair. I think this is an area worth studying.
+
+
+\subsection{Question 7}
+
+\subsection{Question 8}
+
+\subsection{Question 9}
+Which of the two methods described in the previous two questions shuld a local government use if its objective is to (a) maximize consumer welfare, (b) Maximize government revenue, (c) maximize the number of consumers who buy the service. 
+Can you propose a better method for awarding the franchise if the government's objetive is to maximize consumer welfare?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Problem set 3}
+
+The third problem set is graded, although not all the questions are graded. The selection of graded questions corresponds to those problems that exemplify the main problems or barriers faced when implementing economic regulation. It is important to remember that the purpose of these models is to abstract reality in a way that we can identify the core incentives that take place in the market.
+
+The first question recaps cost functions and economic regulation, the study of two-part tariffs, and the analysis of deadweight loss. The second question asks for the Peltzman model that argues in favor of regulation being impacted and modified by groups of interest. The third question brings a new concept and a new method to take into account optimal pricing. Questions 4, 5, 6, and 7 are drawn from the lecture. In this section, we can, therefore, spend more time having an open discussion. It results convinient to split this tutorial into two. The first part, corresponds to the abstract models and the second part to the discussion of concepts and applications.
+
+
+\subsection{Question 1}
+A firm’s total cost of producing $Q$ units of output is $C\left(Q\right)=79+20Q$. The (inverse) market demand curve for the firm’s product is $P\left(Q\right)=100-Q$, where $P$ denotes the price of the product.
+
+\begin{enumerate}
+\item	Will the firm earn a profit if it is not subject to any regulation? Please calculate the profit and indicate it in a graph, where price and cost are on the vertical axis, and quantity on the horizontal axis. (2p)
+\item 	If a regulator requires the firm to charge no more than its marginal cost of production, how many units will be sold? At what price? What happens to profits? Please calculate and indicate in the graph. (2p)
+\item Suppose that the regulator requires the firm to set the price equal to the firm’s average cost. What will the price be, what output will the firm produce, and what profit will the firm earn? Please calculate and indicate in the graph. (2p)
+	\item Now suppose that a two-part tariff is set, so each consumer must pay a fixed fee regardless of consumption level plus a per-unit price. Further suppose the market consists of ten consumers, each with the inverse demand curve $P\left(Q\right)=100-10Q$. If the price is set equal to the firm’s marginal cost, what is the largest fixed fee that a consumer would pay for the right to buy at that price? (2p)
+\item 	Evaluate deadweight loss under the pricing regimes mentioned in sub questions a, b, c and d. Please calculate and indicate in the graph. (2p)
+\end{enumerate}
+
+This question is setting the stage of the problem set by bringing in the core concepts of regulation. First, a benchmark where regulation does not take place and we observe the monopoly equilibrium, the second one the case when the regulator requires the firm to charge marginal price as in a perfect competition setting, the case when the regulator requires the firm to charge average cost, as mandate to generate zero profits, the two-part tariff price. The question also is asking us to compute the deadweight loss. The DWL will help us compare the four different scenarios and make some inferences about the result.
+
+To summarize each question asks for the following:
+
+\begin{itemize}
+	\item No regulation and threfore a monopoly equilibrium
+	\item The regulator is requiring price equal to marginal cost, or marginal cost pricing,. According to Dupuit (1844) at a Pareto optimum the price must equal marginal cost. So here we are facing a regulator that aims for consumers welfare.
+	\item The regulator requires the price to be equal to average cost. In other words, this regulator is requiring the firm to make no profits.
+	\item With th Two-Part tariff the regulator requires the firm to charge only marginal price, and allows the monopoly supplier to charge a non-linear price. This means that in practice the monopolist would charge an additional fee plus the price that is the marginal cost. The fee could be the total consumer surplus, even a single consumer would be willing to pay. An alternative could be that of quantifying the loss and making each consumer to pay a proportional fixed fee.
+\end{itemize}
+
+
+
+\subsection{Question 2}
+
+
+\subsection{Question 3}  Assume that a water distribution monopoly serves two consumer types, industrial and residential. Let $P_I$ denote the price that industrial consumers pay for water, and $P_R$ denote the price that residential consumers pay for water. The demand for water by industrial consumers is $Q_{I}(P_{I})= 30 -P_I$. The demand for water by residential consumers is $Q_{R}(P_{R})=24-P_R$. The only cost that the monopoly incurs is the fixed cost of installing a water pipeline. This cost is 328 euros. Find the Ramsey prices in this setting. Hint: The absolute value of the price elasticity of demand is $\frac{P_I}{Q_I}$ for industrial consumers and $\frac{P_R}{Q_R}$ for residential consumers.
+
+Before we start attempting to answer this question, let's go back to what Ramsey Prices are. These prices correspond to one of the more pervasive regulation that directly affects the prices. This type of regulation informs about how a regulator should (normative) statement set prices for the services supplied by a natural monopoly in order to secure the highest possible level of consumer surplus while ensuring the supplier's financial solvency. Moreover, for the sake of simplification first, we are going to understand the regulated supplier as a natural monopoly. Classic examples of natural monopolies are energy services providers and defense, but think about Google and other platform services. There is still a debate going on, and not a full agreement among scholars and practitioners, but Google is an example of a natural monopoly. In the book the propose to think about railroads as a regulated enterprise, so perhaps we can also think about ProRail in that regard.
+
+
+
+
+\subsection{Question 4}
+Discuss in detail the three regulatory concepts mentioned below. For each of these regulatory concepts, answer the following questions: What is it? How and in which sectors is it used? What are the advantages and disadvantages of this type of regulation? 
+\begin{enumerate}
+\item Vertical separation
+\item Price-cap regulation
+\item Benchmarking or yardstick regulation
+\end{enumerate}
+
+
+First of all lets start with vertical separation. This concept of regulation implies that there would be some unbundle supply chain, that aim to separate the network industry in parts that are competitive from the monopolistic one. Vertical separation also implies or aims to librelize the potentially competitive parts, so to make the entry possible. Therefore, vertical separation implies a separation of the network and other parts, for instance, retail and production.
+
+One can think that an advantage is that it limits the need for regulation, because one part would be already competitive. Vertical separation also eliminates the risk of cross-subsidies by the incumbent from its non-competitive to its competitive segments (could push away competitors)
+However, one disadvantage is that there might be potential losses due to economies of scope and coordination. Some sectors that use vertical separation are electricity, gas, and railways.
+
+For the second type of regulation we have price-cap regulation. This type of regulation implies that the regulator will set a cap on the price that a provider can charge. Therefore, prices become, to varying degrees, detached from costs for a fixed period of time. A common variant is that price increase is linked to economy-wide inflation, minus some productivity offset.
+
+On advantage is that price caps create strong incentives to minimize costs. In contrast, a disadvantage is that pricing flexibility may deter entry. Moreover, price caps can create extreme earnings because is not linked to cost. 
+Some sectors that we can think of are heat, universal postal service, drinking water, maritime pilotage.
+
+The third concept of benchmarking or yardstick regulation tries to implement the idea that regulated firms not facing competition do not have an incentive to perate efficiently. Therefore the idea is to set prices based on efficienct costs as defined by peer-group (of actual competittors or abroad) froce competition with shadow-firms. In that sense, we can define yardstick competition as a comparison within a group of companies or firms that compete to be the efficient company. Whereas benchamarking is a comparison with other companies for example abroad companies. One advantage is that this kind of regulation removes x-inefficiencies and it may appear when regulation is based on costs. However, one disadvantage is that it doesnt address the heterogeneity between firms, which leads to difficulties comparing firms. Moreiver, it can lead to quality degradation incentives and effect o non-measured variables.
+
+Some sectors that use this type of regulation are electricy, gas and heat.
+
+\section{Problem set 4}
+
+This week's problem set aims to study one mechanism that we have addressed in previous topics such as franchise bidding or competition for the market. Nonetheless, this week's topic is public procurement, which is nothing else than a regulated market. In public procurement markets we are studying the case where the government is the buyer and it brings the notion that we study back in Hart's (1997) model of public and private ownership. But in the case of public procurement we want to study the mechanisms to select that private firm. There are other considerations. In public procurement, we talk about a government, say a ministry that requires supplies, but also a municipality hall that is looking for a firm to provide a service as in question 3. To recap what I just said, we move one step forward in the question on whether to produce or manage a facility (rights) by a public state versus a private enterprise, but which enterprise to select to manage the product, facility, service. it also moves forward from the question competition for the market because in public procurement the firms will be competing not only for `the market' but for `one market', and it could be that this is one of the many markets the firms compete in and for. It could be that  the firms meet in a retail market and there they compete in the market.
+Anyways, the central idea here is that in public procurement markets we have a selection of firms from the market, some of these selection procedures are competitive bidding (and that would be our focus). Moreover because procurement is exercised by the governement it is regulated by default. 
+
+Why we study auctions at all? What are auctions really? Krishna (2010)  says that regardless of the auciton form one common aspect of these institutionsis that they \textit{elicit information} in the form of bids, from potential buyers regarding their willingness to pay and the outcome. ``Who wins what and pays how much is determined solely on the basis of the received information'' Also, in theory auctions are anonymous in the sense that the identity of bidders play no role in determining who wins.
+
+To recap on auction theory there are some different formats. 
+
+Why dont we talk about welfare any more in auctions? Or when do we talk about welfare in auction? and how?
+
+\subsection{Question 1}
+
+In a sealed-bid auction where two participants are competing for an item, both bidders are rational and risk-neutral. Each participant has a private valuation for the item, unknown to the other. These valuations are drawn independently from a uniform distribution ranging from 0 and 10. In other words, Each bidder assumes that the valuation of the opponent is a random variable that is uniformly distributed between $0$ and $10$. $V_i \sim Uniform\left[0,10\right]$. Let the valuations be denoted as $V_1$ and $V_2$ for the two bidders, respectively.
+Given this setup, determine the optimal bidding strategies denoted as $b_1^\ast\left(v_1\right)$ and $b_2^\ast\left(v_2\right)\ $  for the bidders in this sealed-bid auction, where the highest bid wins and the winner pays their bid price. This is, find the equilibrium bidding functions in this first-price sealed bid auction.
+
+
+This question is a warm up exercise and at the same time represents the a core concept in the study of auctions. Recall that a first price auction is actually strategically equivalent to the open auction called Dutch auction. 
+
+
+\begin{enumerate}
+	\item In this exercise we have two bidders
+	\item Rational and risk neutral.
+	\item Private valuation. Independent private valuations. This is going to be important for the second exercise
+	\item Each bidder considers that the valuations (each other valuations) are drawn from a uniform distribution ranging from 0 to 10
+\end{enumerate}
+
+The question is asking us to find the equilibrium bidding strategy. In other words, if you were bidding in this auction what would be the optimal bid for you. 
+
+Let's describe what a first price sealed bid auction is. 
+
+\begin{enumerate}
+	\item The object is sold to the high bidder
+	\item The highest bidder pays its bid
+	\item The strategy in this auction system depends on what the other bidders are doing
+	\item Your approach is to maximize the expected value of your profit or expected payoff
+\end{enumerate}
+
+To start lets set the ground for these definitions. Valuation is a representation, a monetary representation, of how much do you value owning this object. We are going to call that $v_i$. We also have a variable that represents the bid as $b_i$, this is the number you write down in the sealed envelop. There is also a payoff which is the difference between your valuation and what you pay. The benefit minus the cost. $v_i - b_i$. And here we must think about the probability that you win the auction.  This probability is going to fundamental in your strategy $Pr(b_i is the highest bid$. Notice that you want to win the auction, therefore you want to increase $b_i$ but at the same time you would like to make a positive high payoff, so you want this difference to be big.
+
+At this point you could bid your true value, in other words you could bid $b_i=v_i$, but then you would be making zero payoffs, your surplus or profits are zero regardless of whether you are the highest bid or not. That is not your strategy, remember that in this context bidders are rational.
+        
+Let's define the expected payoff as the difference between $i's$ valuation of an item and $i's$ final bid; times the probability of winning. We can calculate this as follows:\\
+        \begin{align*}
+            E[\text{Payoff}] = [v_i - b_i] \times Pr(b_i \; \text{is the highest bid})
+        \end{align*}
+ 
+ Let's now define what this probablility means.  The probability that $b_i$ is the highest bid is the probability that the highest opposing bid $b_j=B(v_j)$ is less than $b_i$.
+ It seems reasonable to  define $b_j$ as a function of bidder $j's$  valuation $=B(v_j)$.\\
+
+ We can define $B(v_j)$ as the other bidder's strategy and assume that it is a linear function of their valuation. Thus, $B(v_j) = \alpha*V_j$ where $0<\alpha<1$. In other words, we expect that bidder j bid is a fraction of their own valuation o the item. If $\alpha=1$ then the $j's$ bid is equal to its valuation. 
+        
+Let's rewrite the probability that your bid $b_i$ is higher than the bid of the other bidder.
+
+        \begin{align*}
+            Pr(b_i > B(v_j))
+        \end{align*}
+        
+        \begin{align*}
+         Pr(b_i > & B(v_j)) \\
+         Pr(b_i > & \alpha*V_j) \\
+         Pr \Big(V_j < & \frac{b_i}{\alpha} \Big) \; \text{Since the valuations follow a uniform distribution } \\
+         Pr \Big(V_j < & \frac{b_i}{\alpha} \Big) \; = \; \frac{b_i}{\alpha} 
+       \end{align*}
+        We can now plug this into the payoff function
+        \begin{align*}
+            E[\text{Payoff}] = [v_i - b_i] \times  \frac{b_i}{\alpha} 
+        \end{align*}
+        The equilibrium bidding strategy refers to a maximization problem, in which the bidder wants to maximize their payoff.
+        \begin{align*}
+          \text{max} \; E[\text{Payoff}] & = [v_i - b_i] \times  \frac{b_i}{\alpha}  \\
+          \frac{\partial E[\text{Payoff}] }{ \partial b_i} & = \frac{1}{\alpha}(v_i - a b_i) = 0 \\
+          & b_i = \frac{v_i}{2}
+        \end{align*}
+        The equilibrium bidding function in the First Price auction with two bidders is to bid half of the item's valuation. This is an equilibrium because it is a mutual best response. While bidder $i$ is doing this calculation, $j$ is also doing the same calculation. In other words, if $i$ conjectures that $j$ is bidding half of this value then $j$ should bid half of his value for the same reason.
+        
+      \subsection{Quesiton 2}
+      Assume you are considering auctioning your house. There are two potential buyers, who are rational (risk-neutral) buyers. The two bidders don’t know each other’s valuation exactly and each assumes that the valuation of the opponent is a random variable that is uniformly distributed $V_i \sim Uniform[0,5000]$. They will use a Bayes-Nash Equilibrium strategies in this auction.
+    \begin{enumerate}[(a)] 
+        \item Calculate your expected revenue if you use a first-price auction to sell your car
+        \item Calculate your expected revenue if you use a second-price auction to sell your car
+        \item One of the bidders is a close friend of yours and you know that she values your car at $2,000$ euros. The second bidder’s valuation follows a uniform distribution $V_i \sim Uniform[0,5000]$. Calculate your expected revenue if you use a second-price auction to sell your car.
+    \end{enumerate}
+      
+      
+      As a seller I don't know the valuation of the bidders , thus I do not know in advance whether one type of auction will give me more revenue than other. But given my beliefs about the probability distrbitucion of bidders' values, I can calculate my expected revenue from any type of auction.
+      
+      We have learned that in equilibrium each bidder will bid half of his value. Thus the price at which the object will be sold is 1/2 of the higher of the two bidders' valuations.
+      
+      Again in equilibrium, bidders bid only half their valuations, so the expected revenue of the seller is 1/2 of the expected value of the higher bidder value.
+        
+         Recall that Bayesian Nash Equilibrium strategies are mutual best responses, where Bayes rule is used to figure out $i's$ expectation of $j's$ strategy (e.g what is the expected second highest valuation?), given $i's$ own valuation. \\
+    Notice that in this question, I am the seller. Therefore the solutions should be framed from the seller's perspective. As a seller I have no information about the valuation of the bidders, except for the distribution.
+    
+    Recap: Order Statistics of Uniform Distributions:
+In statistics, the k th order statistic of a statistical sample is equal to its k th smallest value.  The order statistics of uniform distributions have simple regularity properties: The expected value of one draw (= the mean) from the interval [0 100] is 50. The expected values of two draws from the interval [0 100] are: 2/3*100 for the highest draw and 1/3*100 for the second highest draw. 
+
+In particular, the first order statistic is the maximum of n draws, the second order statistic is the second highest of n draws, and the nth-order statistic is the minimum of n draws. Order statistics, for reasons that should be intuitively clear, are useful in analyzing the outcome of first- and second-price auctions.
+     
+     
+     In a first-price auction, the expected revenue is equal to the expected highest value. Recall that the equilbrium bid function $b_i=(\frac{n-1}{n})v_i$ As this funciton is monotonically non-decreasing the highest bidder also has the highest valuation, call it $v_{max}$ in other words
+     \begin{align*}
+     R_1 = E[(\frac{n-1}{n})v_{max}] \\
+     (\frac{n-1}{n})E[v_{max}]
+     \end{align*}
+But $E[v_{max}]$ is the expected value of maximum of n iid draws from rnadom variable uniformly distributed on $[0,1]$ the expected value of the first order statistic which is $n/(n+1$ thus 
+     \begin{align*}
+     R_1 =  (\frac{n-1}{n})\frac{n}{n+1} = \frac{n-1}{n+1}
+     \end{align*}
+     
+
+The expected price in an auction from the seller’s perspective is the expected second highest of n values; in other words, I need to calculate the second order statistics with $n=2$ bidders
+        \begin{align*}
+            E[V^{k}_{(n)}] = V \times \frac{(n + 1 -k)}{(n+1} \\
+            E[V^{2}_{(n=2)}] = 5000 \times \frac{(2+1-2)}{(2+1)} \\
+            E[V^{2}_{(n=2)}] = 1,666.66
+        \end{align*}
+        
+        As a seller I know that in equilibrium each bidder submits a bid equal to half his value, so the equilibrium bid strategy is $b_i = \frac{v_i}{2}$ Because in equilibrium the high-valued bidder wins and pays his bid. The expected revenue is 1/3. On average, the higher of the two values is 2/3, and the higher of the two bids is 1/3. The reason is that if a bidder has value $v_i$, he expects to win whenever the other bidder has a value below $v_i$ (because the first bidder will bid $\frac{v_i}{2}$, and the second bidder will bid less than this whenever its value is below $v_i$): So the bidder with value v expects to win with probability $v_i$ , and if he does win expects to pay $\frac{v_i}{2}$, his equilibrium bid.
+
+
+In a second-price auction the bidders submit sealed bids. They don’t know the exact valuation of the other bidder. The bidder who submitted the highest bid wins and pays the second highest bid. Now, the optimal bidding strategy of the bidders is to bid their own valuation $b_i = v_i $. In other words, In equilibrium, every bidder bids their value. Now, as a seller my revenue depends (again) on the distribution of values. In a second-price auction, the seller earns a revenue equal to the expected losing bid. Again, in other words, I need to calculate the second order statistics with $n=2$ bidders
+        \begin{align*}
+            E[V^{k}_{(n)}] = V \times \frac{(n + 1 -k)}{(n+1} \\
+            E[V^{2}_{(n=2)}] = 5000 \times \frac{(2+1-2)}{(2+1)} \\
+            E[V^{2}_{(n=2)}] = 1,666.66
+        \end{align*}
+
+        In equilibrium, each bidder bids his value, so the equilibrium strategy is $b_i = v_i $. In equilibrium, the bidder with the higher value will win, and pay the bid (or equivalently value) of the lower-valued bidder. The expected revenue is 1/3. Again, if we take two draws from a uniform distribution on [0; 1], the higher draw will be on average 2/3 and the lower draw will be on average 1/3. Notice also that if a bidder has value $v_i$, he expects to win whenever the other bidder has a value less than $v_i$; which happens with probability equal to $v_i$. If he does win, he expects to pay $\frac{v_i}{2}$. \\
+        
+        \textbf{Note Revenue Equivalence theorem}: The equilibrium expected revenue from first-price and second-price auctions would be the same so long as the distributions of values are continuous and independent between individuals. This equivalence holds as long as the object being auctioned always goes to the bidder with the highest buyer value and the bidder with the lowest buyer value is guaranteed to make zero profits in the auction. This result is known as the “revenue equivalence theorem”
+        
+        Considering a second-price auction, as a seller I have the following information
+
+        \begin{align*}
+             b_1 = v_1 = 2000 \\
+             b_2 = v_2 \sim U[0,5000]
+        \end{align*}
+        Putting on the shoes of the second bidder, I know that the price bidder 2 expects to pay equals the expected second highest value under the assumption that he wins. In other words, bidder 2 assumes that his own value is the highest. As a seller I can calculate the expected order statistic when bidder two wins.
+%        \begin{align*}
+%            E[V^{k=1}_{(n=n-1)}] = V \times \frac{((n-1) + 1 - (k=1))}{((n-1)+1)} \\ 
+%            E[V^{k=1}_{(n=n-1)}] = 5000 \times \frac{1}{2} \\
+%            E[V^{k=1}_{(n=n-1)}] = 2500
+%        \end{align*}
+%        
+        In this exercise, the revenue equivalence theorem does not longer apply. This is because I know the valuation of my friend. Hence the assumption of independent private values no longer holds. However, I can calculate an expected revenue as follows:
+
+        \begin{align*}
+            E[\text{revenue}] & = Pr(b_1 \; \text{wins}) \times b_2+ Pr(b_2 \; \text{wins}) \times b_1 \\
+            E[\text{revenue}] & = Pr(b_1 \; \text{wins}) \times E[v_2<2000] + Pr(b_2 \; \text{wins}) \times (b_1= v_1)
+         \end{align*}
+
+
+        \begin{align*}
+            E[V^{k=1}_{(n)}] = V \times \frac{(n + 1 - 1)}{(n+1)} \\ 
+            E[V^{k=1}_{(n)}] = 2000 \times \frac{1}{2} \\
+            E[V^{k=1}_{(n)}] = 1000
+        \end{align*}
+        
+        
+        \begin{align*}
+            E[\text{revenue}] & = Pr(b_1 \; \text{wins}) \times E[v_2<2000] + Pr(b_2 \; \text{wins}) \times b_1 \\
+            & Pr(b_1  \; \text{wins}) = Pr(b_2 < b_1) = \frac{2000}{5000} \quad   \\
+            E[\text{revenue}] & = \frac{2}{5} \times 1000 + \frac{3}{5} \times  2000 \\
+            E[\text{revenue}] & = 1000 + 12000 =1600
+        \end{align*}
+
+%        \begin{align*}
+%            E[\text{revenue}] & = Pr(b_1 \; \text{wins}) \times b_1 + Pr(b_2 \; \text{wins}) \times E[\text{Price} \; b_2 | b_2 \text{wins}] \\
+%            & Pr(b_1  \; \text{wins}) = Pr(b_2 < b_1) = \frac{2000}{5000} \quad \text{since} \;  b_2 = v_2 \sim U[0,5000] \\
+%            E[\text{revenue}] & = \frac{2}{5} \times 2000 + \frac{3}{5} \times  2500 \\
+%            E[\text{revenue}] & = 2300 
+%        \end{align*}
+
+
+        \vspace{2em}
+        \textbf{Note about the solution suggested in 2c:} This solution takes into account the fact that the seller knows $b_1$ valuation. Recall that the seller and the bidders use Bayes-Nash Equilibrium strategies. Therefore, the seller updates his beliefs about the bidders' equilibrium strategies. The seller knows that bidders will bid their valuation (because this is a second-price auction), hence the seller considers $b_1 = v_1 = 2000$. and not the uniform distribution $[0,2000]$. 
+        
+        
+        \subsection{Question 3}
+        
+        The French government plans to auction a contract for the construction of a new sustainable office building. The responsible official who organises the auction only knows 5 bidders who will participate in the auction and assumes that those bidders have independent private values. The respective official does not know the valuations of these 5 bidders but does know that their valuations are uniformly distributed $V_i \sim Uniform[0,120]$. All 5 bidders are risk neutral. The contract should go to the bidder who submits the lowest costs for a given level of energy efficiency.
+    \begin{enumerate}
+        \item What are the government ex-ante expected costs if they choose a Dutch auction as the auction format? 
+        \item How much is the government's ex-ante expected costs if they choose to auction the contract in a second-price sealed bid auction? Explain your answer regarding the government's expected costs.
+        \item Susti Ltd. is one of the 5 bidders at the above-mentioned auction. Its valuation of the auctioned contract is 70. Susti Ltd. doesn’t know the other bidders’ valuations but does know that their valuations are uniformly distributed. How much will Susti Ltd. bid in the second-price sealed bid auction?
+	\item How much will it bid in the Dutch auction? [Attention, here the lowest bid wins. Susti Ltd. will assume that its own valuation is the lowest.]
+	\end{enumerate}
+	
+	\begin{itemize}
+            \item First, recall that a Dutch auction is a descending-progressive auction, the Winner is the bidder with the highest bid, and the price paid is the winner's bid. We can also recall that in independent private values setting, a Dutch auction is strategically equivalent to a first-price auction. This is because a Dutch auction offers no useful information to bidders, and bidding a certain amount in first price auction is equivalent to offering to buy at that price in Dutch auction.
+            Second, notice that this is a \textit{reverse} auction in which the winner is the lowest bidder.
+            Therefore, we can define this as a first-price lowest auction.
+            Now, the expected costs (e.g our equivalent of expected revenue) can be calculated by establishing the distribution of the bids, in particular that of the second losing bid. 
+            In our case, the second losing bid is the bidder with the 4th losing bid because there will be a bidder with a 5th bid with the lowest bid who wins.
+            In other words, we need to calculate the 4th order statistic;
+            \begin{align*}
+            E[V^{k}_{(n)}] = V \times \frac{(n + 1 -k)}{(n+1} \\
+            E[V^{2}_{(n=2)}] = 120 \times \frac{(5+1-4)}{(5+1)} \\
+            E[V^{2}_{(n=2)}] = 40
+            \end{align*}
+            Hence the expected costs of this auction are 40.
+            \item Following the revenue equivalence theorem, for this reverse auction, we can expect a cost-equivalence. This means that with a second-price lowest auction, the government would expect to pay the second losing bid. Hence, the expected costs would be 40.
+            \item Susti Ltd would bid their true valuation. This means that in the context of a second-price lowest auction the dominant strategy is to bid the own valuation.
+            \end{itemize} 
+
+\subsection{question 4}
+
+ Inspired by {Che1993} Che (1993), the Dutch government will conduct a scoring auction for paving a new bike path in Utrecht. The government solicits bids from two firms. Each bid specifies an offer of promised quality, q and price, p, at which a fixed quantity of products with the offered level of quality q is delivered. The quantity is normalised to one (i.e one bike path). For simplicity, quality is modelled as a one-dimensional attribute, for example, quality of the asphalt. Assume that the scoring rule is defined by $S(q,p)=10 \sqrt{q}-p$. 
+ 
+ This scoring rule implies that the score is proportional to the square root of the quality, scaled by a factor of 10 and that the score grows at a decreasing rate as the quality increases. In other words, small increases in quality at low levels will have a relatively larger impact on the score compared to higher levels of quality. Moreover, the score is decreasing in price, thus, firms with higher prices would get a lower score.
+Firm A bids a quality valuated in 64 units and a price of 20 thousand euros. Firm B bids a quality of 49 and a price of 16 thousand euros. 
+
+
+\begin{enumerate}
+        \item Describe how would a first-score auction and a second-score auction work.
+        \item Find the scores for Firm A and Firm B and discuss who would win in first-score auction and who would win a second-score auction. Discuss your findings in line with the lecture on supplier selection (Schotanus Lecture 2022).
+    \end{enumerate}
+    
+    
+    \begin{itemize}
+        \item According to Che (1993), we can define these auctions as:
+        \begin{enumerate}
+            \item First-score auction: The winning firm’s offer is finalised as the contract. 
+            \item Second-score auction, the winning firm is required to (in the contract) to match the highest rejected score. In meeting this score, the firm is free to choose any quality-price combination.
+        \end{enumerate}
+        \item According to the scoring rule we have
+        \begin{align*}
+            S_{A}(p,q) = 10 \times \sqrt{q}-p = 10\times\sqrt{7} - 5  = 21.5 \\
+            S_{B}(p,q) = 10 \times \sqrt{q}-p = 10\times\sqrt{5} - 3  = 19.4 \\
+        \end{align*}
+        If the Dutch government implements a first scoring auction, then Firm A wins. Then Firm A has to build a bike path with a (high) quality but also with a higher price.
+        If the Dutch government implements a second-scoring auction, then Firm A wins. However, now Firm A - who offers the highest quality in the market- has to build a bike path that matches at least the quality of Firm B; or any quality-price combination. 
+        According to Che (1993) and the supplier selection literature (Schotanus Lecture 2022), a scheme such as a second-score auction allows for negotiation between a buyer and a winning bidder. Moreover, it guarantees that the selected Firm is the best in the market (e.g. depending on the scoring rule).
+         \end{itemize}
+
+        \begin{align*}
+        & q_A= 64 \qquad p_A=20 \\
+            S_{A}(p,q) & = 10 \times \sqrt{q}-p \\
+             & =  10\times\sqrt{64} - 20  = 60  
+        \end{align*}
+
+
+
+        \begin{align*}
+        & q_B  = 64 \qquad p_B=16 \\
+            S_{B}(p,q) & = 10 \times \sqrt{q}-p \\
+           & = 10 \times \sqrt{49}-16 =54
+        \end{align*}
+
+Now we try the score rule, 
+
+Best price =  $p_B=16$
+
+
+\begin{align*}
+	ScorePrice = 100 - 50\frac{Price}{BestPrice}
+\end{align*}
+
+
+\begin{align*}
+	ScorePriceA & = 100 - 50\Bigg[ \frac{(p_A = 20)}{16} \Bigg] \\
+	 & = 37.5
+\end{align*}
+
+\begin{align*}
+	Score A & = ScorePriceA + SocreQualityA \\
+	& = 37.5 + 0.5*64 \\
+	& 69.5
+\end{align*}
+
+\begin{align*}
+	ScorePriceB & = 100 - 50 \Bigg[ \frac{(p_B = 16)}{16} \Bigg] \\
+	 & = 50
+\end{align*}
+
+\begin{align*}
+	Score B & = ScorePriceB + SocreQualityB \\
+	& = 50 + 0.5*49 \\
+	& = 74.5
+\end{align*}
+
+\section{Problem Set 5}
+
+\subsection{Renegotiation}
+
+First let's notice that when we talk about forming a bid we are referring to calculating the cost of delivering the project. This is an important concept in public procurement, because we are saying that bids are a function of costs.
+Second, since we are talking about renegotiation we are talking about an uncertain situation in which a firm might have to undertake an extra cost.
+Third, we are assuming rational decision makers and risk neutral bidders, what kind of information shuold they have? Each bidder should know their own expected cost and how the net expected costs of other bidders are distributed. Also the procurer initially knows only the distribution of bidders' net expected costs. More importantly the bidders know there is a probability of cost overruns and have a good guess of what it would be.
+
+A simple solution is to assume a case where there are only two bidders. One of the bidders has lower costs. So the lowest cost firm will bid what they expect would be the other bidders' cost plus and additional amount
+
+\subsection{Relative first score auction}
+
+
+\subsection{Rules vs discretion}
+
+
+\subsection{Politcal campaign donations}
+
+
+\section{Environmental regulation}
+
+Farm A raises cattle 
+Farm B crops
+
+cattle stray onto the fileds in farm B
+
+Questions:
+\begin{enumerate}
+\item Should the cattle be allowed to stray from farm A to farm B?
+\item Should farm A be required to put up a fence, and i so, who should pay for it?
+\item The question of who should pay for it is clear to me becuase farm A owns the cattle and has a responsibility-maybe- of looking over what its cattle does, however,- farm B owns the crops and is the one who wants to keep the crops save so it is a normal cost to protect its cost.
+\item What are the implications from an economic standpoint if farm A is assigned the property rights and farm B can compensate farm A for putting up a fence
+
+What are the property rigths here? 
+Why would farm B compensate farm A for putting a fence? 
+Well, I consider that farm B could compensate farm A becuase if farm A puts up a fence, A is incurring in this costs of putting up the fence and the cattle would be restricted from getting into farm B crops and therefore farm is not paying anything directly, instead, farm B would be saving some money. 
+Thus, we can consider that farm B can compensate farm A for putting up the fence and saving farm B costs and avoiding the externality.
+
+
+\item Alternatively, we can assign the property rights to the victim in this situation, that would be farm B, waht would be the economic implications of assigning the property rights to farm A?
+
+According to Coase from an economic efficiency standpoint, the fencing outcome will be the same irrespoective of the assignmnet of property rights.
+
+\end{enumerate}
+
+
+--- 
+Assign the right to let cattle stray from farm A
+then farm B will bribe farm A to construct a fence
+only if damage caused to farm b's crops > cost of the fence.
+This means that the cattle is allowed to stray and nothing is said or mentioned regarding putting up a fence, so farm B would bribe or give some money to firm A to convince them to build up a fence as long as the costs of damaging the crops are higher than the costs of building up a fence.
+In this case it would actually be more economicly efficient to build up a fence.
+In other words, it would be efficient anyways to construct a fence, because farm B will compensate farm A, given that the cost of damages are higher than the cost of putting up a fence firm B will be willing to pay a cost that is lower. In this escenario, farm A would contract voluntarily to purchase the externality so as to eliminate it. 
+how Farm A is purchasing the externality? it is farm B who is paying the bribe. However, noone has put a price on the bribe, it could be that the bribe is some small amount that would be enought to persuade farm A. I think farm A would ask farm B for a higher bribe that ends up compensating the cost of the fence.
+In this situation what would happen if the costs of damaging the crops are lower that the costs of building up a fence and farm A has the property rights?
+
+What if we assign the property rights to farm B? This means that farm B has the rights to restrict the entry of cattle into their crops.
+In this case farm A could construct the fence to prevent the damage. If the cost of building up a fence exceeded the damage on the crops, then it woudl result cheaper for farm A to contract with farm B to compensate them for the damage.
+
+If the damage is higher than the fence cost, then farm A would built the fence.
+
+\begin{enumerate}
+\item Case 1 - Farm A property rights
+\begin{itemize}
+	\item 	- damage > fence Farm B bribes and Farm A builds fence
+	\item - damage < fence no fence, B suffers damage
+	\end{itemize}
+\item Case 2 - Farm B property rights
+\begin{itemize}
+	\item 	- damage $>$ fence Farm A could build fence
+	\item	- damage $<$ fence no fence, A compensates B
+	\end{itemize}
+\end{enumerate}
+In each case we obtain the same results in terms of whether or not the fence is constructed.
+The objective from an efficiency standpoint is to avoid the more serious harm.
+The cost theorem as a bargaining game.
+Concepts, vocabulary:
+\begin{itemize}
+	\item 	Maximum amount that firm is willing to pay: minimum control costs
+	\item 	Maximum amount is also penalty imposed if externality
+	\item 	Minimum acceptance value: Minimum amount willing to acceptin return for suffering impacts,amount of compensation that restores their level of utility to what it would have been in the absence of pollution.
+	\item 	barganing rent: net potential gains that will be shared by the two parties as a result of being able to strike a bargain
+\end{itemize}
+
+Barganing requirement: maximum offer $>$ minimum acceptance
+Firm willing to give max 10
+Person accepting min 5
+because 10 $>$ 5 the person can ask for more and the firm can offer less
+
+If max offer $<$ min acceptance
+e.g. 12 $<$ 18
+ no contractual solution is possible.
+
+Barganing rent is diffenrence between max offer and min acceptance
+if max offer $=$ 10 and min accepting$=$5
+then 10$-$5$=$ 5 of barganing rent
+
+
+--- Example with pollution
+damage $=$ 500
+citizens plant cost 300
+company treatment cost 100
+
+Bargning with victim-assigned property rights:
+\begin{itemize}
+	\item	- max offer = 100 
+	\item- min accept = 300
+	\item- max offer $<$ min accept
+	\item- Outcome would be that company installs controls, no cash transfer
+\end{itemize}
+Bargaining with polluter-assigned property rights
+
+\begin{itemize}
+	\item 	- max offer by citizens $=$ 300 $>$ min accept by company $=$ 100
+	\item - outcome would be that citizens pay company 100 to install controls 
+	\item 	- also pay company 100 share of rent if equal barganing power
+\end{itemize}
+Areas where the harm is greatest emerge as the first candidates for regulation.
+
+If it is believed that the market will not work, then ask
+\begin{itemize}
+	\item What are the efficiency effects on both parties?
+	\item What are the losses to the parties from the current situation, and what will be the losses with regulation?
+\end{itemize}
+
+Selecting the optimal policy: standards versus fines
+
+Lawyers and economists generally have different answers to the question of how one should structure regulatory policy.
+\begin{itemize}
+\item Lawyers standard prescribing the behavior that is acceptable
+\item Economist replicate what would have occurred in an efficiency market by establishing a pricing mechanism for pollution
+\end{itemize}
+
+Setting the pollution tax
+\begin{itemize}
+\item rationale for government regulation: relationship of costs and benefits of controlling environmentla externalities that would not otherwise be handled in an unregulated market context.
+\item Role of heterogeneity
+\item Standard setting under uncertainty
+\item Pollution taxes
+\item  Prices versus quantities - (quota)
+\end{itemize}
+
+Martin Weitzman
+\begin{itemize}
+\item  relative slopes of the marginal benefit and marginal cost curves
+\item  Price instrument is preferable (to a quota) if abs(slope marginal costs) $>$ abs(slope marginal benefits)
+\item  Quota instrument preferable if abs(slope marginal costs) $<$ abs(slope marginal benefits)
+\end{itemize}
+
+\subsection{Question 1 - graded 10 points}
+
+You are a member of the Environmental Economics Insights Team of Germania, a prosperous country, located somewhere in the Northern hemisphere, with vast territorial waters reaching into the Arctic ocean. It got rich by exploiting its extensive natural resources. Germania’s capital Winden faces several pressing environmental problems that the city council is now confronted with. One of the biggest concerns is pollution caused by Winden’s textile factory, which is located in a densely populated neighborhood. The factory has an emission of uniformly mixing flow pollutants of size $M$
+
+The private benefit function of the factory is:  $B(M)=80M-2M^2$ and the external damage for the society is $D(M)=2M^2$
+
+The city council asks you to provide advice that helps solving the problem in an efficient and socially optimal way.
+
+\subsubsection{Question 1a}
+Assume that the textile factory maximizes its private benefit, without taking into account the external damages. How much will it emit? 
+
+This question is telling us that private benefit is a function proxy or similar to profits, we don't know any further information other than that the factory exploits some natural resources and benefit from that extraction. The function also says that the factory's benefit depends on the mixing of flow pollutants this is a quadratic function. The company benefits from maximizing the benefits, from finding the optimal amount of pollutants. The factory doesn't have to take into account the external damage it does to the society.
+
+\end{document}
